@@ -336,7 +336,7 @@ class Matchmaking:
         Depends on whether `FilterType` is `NONE`, `COARSE`, or `FINE`.
         """
         challenge = model.Challenge(event["challenge"], self.user_profile)
-        opponent = challenge.challenge_target
+        opponent = challenge.opponent
         reason = event["challenge"]["declineReason"]
         logger.info(f"{opponent} declined {challenge}: {reason}")
         self.discard_challenge(challenge.id)

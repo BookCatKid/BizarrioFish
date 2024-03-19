@@ -1,0 +1,348 @@
+2024-03-18 19:20:43,734 __main__ (lichess-bot.py:1051) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess-bot 2024.3.12.4
+    .  //__\
+    .  )___(   Play on Lichess with a bot
+    
+2024-03-18 19:20:43,834 lib.config (config.py:262) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: TestFish
+  working_dir: ''
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  opponent_allow_tos_violation: false
+  challenge_mode: random
+  challenge_filter: none
+
+2024-03-18 19:20:43,879 lib.config (config.py:263) DEBUG ====================
+2024-03-18 19:20:43,916 lib.config (config.py:262) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/
+  name: TestFish
+  working_dir: C:\Users\simon\Downloads\Lichess_Bots\lichess-bot
+  protocol: homemade
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+    max_depth: .inf
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+quit_after_all_games_finish: false
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  block_list: []
+  allow_list: []
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  allow_during_games: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  rating_preference: none
+  opponent_allow_tos_violation: false
+  challenge_mode: random
+  challenge_filter: none
+  block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_file_grouping: game
+
+2024-03-18 19:20:43,969 lib.config (config.py:263) DEBUG ====================
+2024-03-18 19:20:43,975 __main__ (lichess-bot.py:1054) INFO Checking engine configuration ...
+2024-03-18 19:20:43,981 lib.engine_wrapper (engine_wrapper.py:66) DEBUG Starting engine: ['C:\\Users\\simon\\Downloads\\Lichess_Bots\\lichess-bot\\engines\\TestFish']
+2024-03-18 19:20:43,995 asyncio (proactor_events.py:625) DEBUG Using proactor: IocpProactor
+2024-03-18 19:20:44,043 chess.engine (engine.py:1040) DEBUG <UciProtocol (pid=22928)>: Connection made
+2024-03-18 19:20:44,051 chess.engine (engine.py:1062) DEBUG <UciProtocol (pid=22928)>: << uci
+2024-03-18 19:20:44,060 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> Stockfish 16.1 by the Stockfish developers (see AUTHORS file)
+2024-03-18 19:20:44,529 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> id name Stockfish 16.1
+2024-03-18 19:20:44,534 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> id author the Stockfish developers (see AUTHORS file)
+2024-03-18 19:20:44,543 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> 
+2024-03-18 19:20:44,546 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name Debug Log File type string default 
+2024-03-18 19:20:44,551 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name Threads type spin default 1 min 1 max 1024
+2024-03-18 19:20:44,557 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name Hash type spin default 16 min 1 max 33554432
+2024-03-18 19:20:44,561 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name Clear Hash type button
+2024-03-18 19:20:44,565 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name Ponder type check default false
+2024-03-18 19:20:44,569 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name MultiPV type spin default 1 min 1 max 256
+2024-03-18 19:20:44,574 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name Skill Level type spin default 20 min 0 max 20
+2024-03-18 19:20:44,578 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name Move Overhead type spin default 10 min 0 max 5000
+2024-03-18 19:20:44,583 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name nodestime type spin default 0 min 0 max 10000
+2024-03-18 19:20:44,589 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name UCI_Chess960 type check default false
+2024-03-18 19:20:44,595 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name UCI_LimitStrength type check default false
+2024-03-18 19:20:44,600 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name UCI_Elo type spin default 1320 min 1320 max 3190
+2024-03-18 19:20:44,605 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name UCI_ShowWDL type check default false
+2024-03-18 19:20:44,611 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name SyzygyPath type string default <empty>
+2024-03-18 19:20:44,616 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name SyzygyProbeDepth type spin default 1 min 1 max 100
+2024-03-18 19:20:44,625 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name Syzygy50MoveRule type check default true
+2024-03-18 19:20:44,630 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name SyzygyProbeLimit type spin default 7 min 0 max 7
+2024-03-18 19:20:44,637 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name EvalFile type string default nn-b1a57edbea57.nnue
+2024-03-18 19:20:44,646 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> option name EvalFileSmall type string default nn-baff1ede1f90.nnue
+2024-03-18 19:20:44,658 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=22928)>: >> uciok
+2024-03-18 19:20:44,664 __main__ (lichess-bot.py:1057) INFO Engine configuration OK
+2024-03-18 19:20:44,674 urllib3.connectionpool (connectionpool.py:1055) DEBUG Starting new HTTPS connection (1): lichess.org:443
+2024-03-18 19:20:45,540 urllib3.connectionpool (connectionpool.py:549) DEBUG https://lichess.org:443 "POST /api/token/test HTTP/1.1" 200 None
+2024-03-18 19:20:45,825 urllib3.connectionpool (connectionpool.py:549) DEBUG https://lichess.org:443 "GET /api/account HTTP/1.1" 200 None
+2024-03-18 19:20:45,832 __main__ (lichess-bot.py:1066) INFO Welcome BizarrioFish!
+2024-03-18 19:20:45,839 __main__ (lichess-bot.py:225) INFO You're now connected to https://lichess.org/ and awaiting challenges.
+2024-03-18 19:20:47,174 urllib3.connectionpool (connectionpool.py:549) DEBUG https://lichess.org:443 "GET /api/account/playing HTTP/1.1" 200 17
+2024-03-18 19:24:36,538 chess.engine (engine.py:1059) DEBUG <UciProtocol (pid=12156)>: Process exited
+2024-03-18 19:24:36,538 chess.engine (engine.py:1059) DEBUG <UciProtocol (pid=17160)>: Process exited
+2024-03-18 19:24:36,539 chess.engine (engine.py:1046) DEBUG <UciProtocol (pid=12156)>: Connection lost (exit code: 3221225786, error: None)
+2024-03-18 19:24:36,539 chess.engine (engine.py:1046) DEBUG <UciProtocol (pid=17160)>: Connection lost (exit code: 3221225786, error: None)
+2024-03-18 19:24:36,543 chess.engine (engine.py:1059) DEBUG <UciProtocol (pid=22928)>: Process exited
+2024-03-18 19:24:36,543 chess.engine (engine.py:1059) DEBUG <UciProtocol (pid=18536)>: Process exited
+2024-03-18 19:24:36,547 chess.engine (engine.py:1046) DEBUG <UciProtocol (pid=22928)>: Connection lost (exit code: 3221225786, error: None)
+2024-03-18 19:24:36,547 chess.engine (engine.py:1046) DEBUG <UciProtocol (pid=18536)>: Connection lost (exit code: 3221225786, error: None)
+2024-03-18 19:24:36,598 chess.engine (engine.py:1059) DEBUG <UciProtocol (pid=2600)>: Process exited
+2024-03-18 19:24:36,598 chess.engine (engine.py:1046) DEBUG <UciProtocol (pid=2600)>: Connection lost (exit code: 3221225786, error: None)
+2024-03-18 19:24:43,988 __main__ (lichess-bot.py:1119) ERROR Quitting lichess-bot due to an error:
+Traceback (most recent call last):
+  File "C:\Users\simon\Downloads\Lichess_Bots\lichess-bot\lichess-bot.py", line 1116, in <module>
+    start_lichess_bot()
+  File "C:\Users\simon\Downloads\Lichess_Bots\lichess-bot\lichess-bot.py", line 1072, in start_lichess_bot
+    start(li, user_profile, CONFIG, logging_level, args.logfile, auto_log_filename)
+  File "C:\Users\simon\Downloads\Lichess_Bots\lichess-bot\lichess-bot.py", line 247, in start
+    lichess_bot_main(li,
+  File "C:\Users\simon\Downloads\Lichess_Bots\lichess-bot\lichess-bot.py", line 370, in lichess_bot_main
+    accept_challenges(li, challenge_queue, active_games, max_games)
+  File "C:\Users\simon\Downloads\Lichess_Bots\lichess-bot\lichess-bot.py", line 449, in accept_challenges
+    while len(active_games) < max_games and challenge_queue:
+TypeError: 'dict' object cannot be interpreted as an integer

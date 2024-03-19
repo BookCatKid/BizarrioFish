@@ -25,7 +25,6 @@ Supports:
 
 ## Advanced options
 - [Create a homemade engine](https://github.com/lichess-bot-devs/lichess-bot/wiki/Create-a-homemade-engine)
-- [Add extra customizations](https://github.com/lichess-bot-devs/lichess-bot/wiki/Extra-customizations)
 
 <br />
 
